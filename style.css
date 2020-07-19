@@ -7,7 +7,10 @@
 *{
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: blue;
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,6 +23,9 @@ body{
 
 }
 
+.container{
+    margin: 0 20px;
+}
 
 .money{
     width: 200px;
@@ -27,6 +33,7 @@ body{
 
 h1{
     color: rgb(90, 138, 251);
+    text-align: center;
     /* text-shadow: 0 2px 2px black; */
 }
 
@@ -60,6 +67,11 @@ p{
     cursor: pointer;
     font-weight: bold;
 }
+.currency option{
+    font-size: 16px;
+   
+    padding: 10px;
+}
 .currency input{
     padding: 10px;
     border-radius: 10px;
@@ -68,4 +80,13 @@ p{
     font-size: 20px;
     outline: none;
 
+}
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swap-rate-container .rate{
+    color: rgb(90, 138, 251);
+    font-weight: bold;
 }
